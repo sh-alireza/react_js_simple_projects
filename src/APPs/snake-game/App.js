@@ -11,7 +11,7 @@ class App extends React.Component{
             snake : [this.randomPosition()],
             speed : {
                 x : 1,
-                y : 0
+                y : 0,
             },
             direction : "right",
             forbidden_direction : "left",
