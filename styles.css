@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    font-family: cursive;
+}
+body{
+    background: #F1F5F8;
+}
+.header{
+    background: #5556ae;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    letter-spacing: 10px;
+    font-size: 25px;
+    color: #F1F5F8;
+}
+.header h1{
+    text-align: center;
+}
+.projects-container{
+    margin: 10vw auto;
+    display: flex;
+    justify-content: space-evenly;
+    width: 80vw;
+    height: 50vw;
+}
+.projects-card{
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px gray;
+    margin: 20px;
+    width: 30%;
+    height: 50%;
+    overflow: hidden;
+    cursor: pointer;
+    transition: transform 0.8s ease;
+}
+.card-pic{
+    width: 100%;
+    height: 80%;
+    position: relative;
+    overflow: hidden;
+}
+.card-pic img{
+    position: absolute;
+    object-fit: fill;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.projects-card:hover{
+    transform: scale(1.1);
+    transition: transform 0.8s ease;
+}
+.card-detail{
+    background: #5556ae;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 20%;
+    z-index: 2;
+    text-align: center;
+}
+.card-detail span{
+    margin: 10px auto;
+    color: #F1F5F8;
+    font-size: 25px;
+    text-shadow: 1px 1px 0px #ffffff;
+    letter-spacing: 2px;
+}
+@media (max-width: 1050px) {
+    .header{
+        font-size: 20px;
+        height: 150px;
+    }
+    .card-detail span{
+        font-size: 20px;
+        letter-spacing: 0;
+        padding: 3px;
+    }
+}
+@media (max-width: 650px) {
+    .header{
+        font-size: 15px;
+        height: 100px;
+    }
+    .card-detail span{
+        font-size: 10px;
+    }
+}
+@media (max-width: 420px) {
+    .header{
+        font-size: 10px;
+    }
+    .projects-card{
+        width: 37%;
+        border-radius: 5px;
+    }
+}
